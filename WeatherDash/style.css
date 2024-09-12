@@ -1,0 +1,129 @@
+body {
+    background-image: url(/WeatherDash/5197434.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5; /* Brighter text color for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.page-heading {
+    color: #ecf0f1; /* Lighter heading color for contrast */
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for better readability */
+}
+
+/* Responsive heading */
+@media (max-width: 768px) {
+    .page-heading {
+        font-size: 2rem;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.rectangular-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly more opaque for readability */
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Hover effect with shadow and slight scale */
+.rectangular-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.weather-card {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle background change on hover */
+}
+
+.current-weather p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #f5f5f5; /* Brighter text */
+}
+
+/* Responsive text size for weather details */
+@media (max-width: 768px) {
+    .current-weather p {
+        font-size: 1rem;
+    }
+}
+
+.forecast {
+    margin-top: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #00acc1; /* More vibrant teal for titles */
+}
+
+/* Responsive card title */
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Updated small cards displaying temperature, humidity, and rainfall */
+.forecast .row .col-md-2 {
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly more opaque */
+    border: 2px solid #E0FFFF; /* Light cyan border */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    transition: transform 0.3s, background-color 0.3s;
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+/* Hover effect for forecast cards */
+.forecast .row .col-md-2:hover {
+    transform: scale(1.07);
+    background-color: rgba(255, 255, 255, 0.25); /* Slightly darker on hover */
+}
+
+.forecast .row .col-md-2 p {
+    color: #f5f5f5; /* Brighter text for forecast cards */
+}
+
+/* Adjust image size in forecast */
+.forecast .row .col-md-2 img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+}
+
+/* Responsive image size */
+@media (max-width: 768px) {
+    .forecast .row .col-md-2 img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+a:hover, h1:hover, p:hover, .city:hover {
+    color: #00acc1; /* Vibrant teal for hover effects */
+    transition: color 0.3s;
+}
